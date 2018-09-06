@@ -1,4 +1,4 @@
 - hosts: all
   tasks:
     - name: create file
-    file: path=/root/Desktop/test state=touch
+      file: path=/root/Desktop/test state=touch
