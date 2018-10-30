@@ -1,5 +1,7 @@
-- name: upgrade all packages, excluding kernel & avahi related packages
-  yum:
-    name: '*'
-    state: latest
-    exclude: kernel*, avahi*
+- hosts: all
+  tasks:
+  - name: upgrade all packages, excluding kernel & avahi related packages
+    yum:
+      name: '*'
+      state: latest
+      exclude: kernel*, avahi*
