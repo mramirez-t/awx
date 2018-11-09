@@ -4,4 +4,4 @@
     yum:
       name: '*'
       state: latest
-      exclude: kernel*,python*
+      exclude: kernel*,avahi*
